@@ -48,4 +48,8 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
+<<<<<<< Updated upstream
 AGENTS.md
+=======
+.env
+>>>>>>> Stashed changes

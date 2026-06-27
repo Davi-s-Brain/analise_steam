@@ -1,0 +1,19 @@
+# Steam Games Analysis - Dependencies
+
+# Core
+requests==2.31.0
+python-dotenv==1.0.0
+pandas==2.0.3
+numpy==1.24.3
+
+# Web Scraping
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Dashboard
+streamlit==1.31.0
+plotly==5.18.0
+
+# APIs (já incluídas nas dependências core)
+# - requests: para chamadas HTTP
+# - pandas: para processamento de dados
