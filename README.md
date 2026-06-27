@@ -1,5 +1,3 @@
-<![CDATA[<div align="center">
-
 # 🎮 Steam Games Analytics
 
 ### Transforme sua biblioteca Steam em insights poderosos
@@ -15,7 +13,6 @@
 
 [🚀 Início Rápido](#-início-rápido) • [📊 Dashboard](#-dashboard) • [📈 Análises](#-análises) • [🎮 Steam Deck](#-steam-deck)
 
-</div>
 
 ---
 
