@@ -86,6 +86,7 @@ O dashboard interativo permite:
 | 📊 **Gráficos** | Visualizações interativas com Plotly |
 | 🎮 **Steam Deck** | Filtre por compatibilidade |
 | 📈 **Metacritic** | Top scores e distribuição |
+| ⏱ **HowLongToBeat** | Duração estimada vs horas jogadas |
 | 📥 **Export** | Baixe dados filtrados em CSV |
 
 **Abrir dashboard:**
@@ -160,6 +161,7 @@ analise_steam/
 | 🎮 **Steam API** | Dados da biblioteca | ✅ Funcionando |
 | 🎯 **ProtonDB** | Compatibilidade Steam Deck | ✅ Funcionando |
 | 📊 **Metacritic** | Scores de críticos | ✅ Funcionando |
+| ⏱ **HowLongToBeat** | Duração estimada dos jogos | ✅ Funcionando |
 | 🎯 **OpenCritic** | Scores alternativos | ⚡ Opcional |
 
 ---
@@ -169,7 +171,7 @@ analise_steam/
 ### Via Python
 
 ```python
-from scripts.python.api_integrations import ProtonDBAPI, MetacriticAPI
+from scripts.python.api_integrations import ProtonDBAPI, MetacriticAPI, HowLongToBeatAPI
 
 # Verificar compatibilidade Steam Deck
 status = ProtonDBAPI.get_steam_deck_status(413150)  # Stardew Valley
@@ -178,6 +180,12 @@ print(f"Stardew Valley: {status}")  # Verified
 # Buscar score Metacritic
 score = MetacriticAPI.search_game_score("Stardew Valley")
 print(f"Score: {score}")  # 89
+
+# Buscar duração estimada (HowLongToBeat)
+hltb = HowLongToBeatAPI.search_game("Stardew Valley")
+if hltb:
+    print(f"Campanha: {hltb['hltb_main_story']}h")
+    print(f"Completista: {hltb['hltb_completionist']}h")
 ```
 
 ### Via Terminal

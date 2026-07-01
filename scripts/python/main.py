@@ -15,7 +15,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 # Importar módulo de APIs
-from api_integrations import ProtonDBAPI, MetacriticAPI
+from api_integrations import ProtonDBAPI, MetacriticAPI, HowLongToBeatAPI
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -119,7 +119,23 @@ def process_single_game(game, cache):
     
     # Metacritic (usa cache do dataset local)
     metacritic_score = MetacriticAPI.search_game_score(name)
-    
+
+    # HowLongToBeat (duração estimada)
+    hltb_data = HowLongToBeatAPI.search_game(name)
+    if hltb_data:
+        hltb_main_story = hltb_data['hltb_main_story']
+        hltb_main_extra = hltb_data['hltb_main_extra']
+        hltb_completionist = hltb_data['hltb_completionist']
+        hltb_all_styles = hltb_data['hltb_all_styles']
+    else:
+        hltb_main_story = 0
+        hltb_main_extra = 0
+        hltb_completionist = 0
+        hltb_all_styles = 0
+
+    # Rate limiting para HLTB
+    time.sleep(0.3)
+
     result = {
         'app_id': app_id,
         'name': name,
@@ -129,7 +145,11 @@ def process_single_game(game, cache):
         'steam_deck_status': steam_deck_status,
         'protondb_tier': protondb_data['tier'] if protondb_data else 'unknown',
         'protondb_score': protondb_data['score'] if protondb_data else 0,
-        'metacritic_score': metacritic_score
+        'metacritic_score': metacritic_score,
+        'hltb_main_story': hltb_main_story,
+        'hltb_main_extra': hltb_main_extra,
+        'hltb_completionist': hltb_completionist,
+        'hltb_all_styles': hltb_all_styles
     }
     
     # Salvar no cache
@@ -217,6 +237,8 @@ def main():
     logger.info(f"Status Steam Deck:")
     for status, count in df['steam_deck_status'].value_counts().items():
         logger.info(f"  {status}: {count}")
+    logger.info(f"Com HLTB: {df['hltb_all_styles'].gt(0).sum()}")
+    logger.info(f"Média duração (All Styles): {df[df['hltb_all_styles'] > 0]['hltb_all_styles'].mean():.1f}h")
 
 if __name__ == "__main__":
     main()

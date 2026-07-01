@@ -1,139 +1,139 @@
-app_id,name,playtime_hours,is_backlog,categories,steam_deck_status,protondb_tier,protondb_score,metacritic_score
-7670,BioShock,0.0,True,Unknown,Unknown,gold,0.62,94.0
-620,Portal 2,8.766666666666667,False,Unknown,Verified,platinum,0.88,95.0
-400,Portal,3.05,False,Unknown,Verified,platinum,0.88,95.0
-8870,BioShock Infinite,1.6833333333333333,False,Unknown,Unknown,gold,0.69,94.0
-22380,Fallout: New Vegas,0.0,True,Unknown,Verified,gold,0.83,82.0
-320,Half-Life 2: Deathmatch,0.0,True,Unknown,Unknown,gold,0.45,
-6920,Deus Ex: Invisible War,0.0,True,Unknown,Verified,platinum,0.76,
-220,Half-Life 2,0.0,True,Unknown,Verified,platinum,0.91,
-40990,Mafia,0.0,True,Unknown,Verified,gold,0.76,68.0
-49520,Borderlands 2,0.0,True,Unknown,Verified,platinum,0.83,89.0
-8850,BioShock 2,0.0,True,Unknown,Unknown,gold,0.63,
-6910,Deus Ex: Game of the Year Edition,0.0,True,Unknown,Verified,platinum,0.82,
-105600,Terraria,3.8333333333333335,False,Unknown,Verified,platinum,0.83,83.0
-70,Half-Life,0.0,True,Unknown,Verified,platinum,0.81,
-108710,Alan Wake,0.0,True,Unknown,Verified,platinum,0.84,83.0
-201810,Wolfenstein: The New Order,0.0,True,Unknown,Verified,platinum,0.89,81.0
-203160,Tomb Raider,0.0,True,Unknown,Verified,platinum,0.9,86.0
-204360,Castle Crashers,8.3,False,Unknown,Verified,platinum,0.84,83.0
-210970,The Witness,3.783333333333333,False,Unknown,Verified,gold,0.78,87.0
-20920,The Witcher 2: Assassins of Kings Enhanced Edition,36.483333333333334,False,Unknown,Verified,gold,0.76,
-219150,Hotline Miami,9.05,False,Unknown,Verified,platinum,0.82,85.0
-360,Half-Life Deathmatch: Source,0.0,True,Unknown,Unknown,platinum,0.61,
-43110,Metro 2033,0.0,True,Unknown,Verified,platinum,0.77,
-227300,Euro Truck Simulator 2,27.583333333333332,False,Unknown,Verified,platinum,0.91,79.0
-231430,Company of Heroes 2,0.0,True,Unknown,Unknown,gold,0.69,80.0
-232770,POSTAL,0.0,True,Unknown,Verified,platinum,0.72,24.0
-234140,Mad Max,0.0,True,Unknown,Verified,platinum,0.91,73.0
-238370,Magicka 2,2.816666666666667,False,Unknown,Verified,platinum,0.82,72.0
-238320,Outlast,2.4166666666666665,False,Unknown,Verified,platinum,0.87,80.0
-239140,Dying Light,0.0,True,Unknown,Verified,platinum,0.88,75.0
-238010,Deus Ex: Human Revolution - Director's Cut,0.0,True,Unknown,Verified,gold,0.78,88.0
-34270,SEGA Mega Drive & Genesis Classics,0.0,True,Unknown,Unknown,gold,0.61,
-43160,Metro: Last Light Complete Edition,0.0,True,Unknown,Playable,silver,0.41,
-239820,Game Dev Tycoon,4.416666666666667,False,Unknown,Unknown,gold,0.63,68.0
-247080,Crypt of the NecroDancer,2.816666666666667,False,Unknown,Verified,platinum,0.75,87.0
-204450,Call of Juarez Gunslinger,0.0,True,Unknown,Verified,platinum,0.81,
-250900,The Binding of Isaac: Rebirth,44.3,False,Unknown,Verified,platinum,0.86,88.0
-252150,Grimm,4.316666666666666,False,Unknown,Verified,platinum,0.77,77.0
-268910,Cuphead,64.3,False,Unknown,Verified,platinum,0.86,88.0
-307690,Sleeping Dogs: Definitive Edition,0.0,True,Unknown,Verified,gold,0.73,77.0
-226620,Desktop Dungeons,0.0,True,Unknown,Unknown,gold,0.57,
-248820,Risk of Rain (2013),16.666666666666668,False,Unknown,Unknown,gold,0.64,
-346110,ARK: Survival Evolved,0.0,True,Unknown,Unknown,gold,0.67,70.0
-242700,Injustice: Gods Among Us Ultimate Edition,0.5833333333333334,False,Unknown,Verified,gold,0.75,
-335300,DARK SOULS™ II: Scholar of the First Sin,63.233333333333334,False,Unknown,Verified,platinum,0.87,
-359550,Tom Clancy's Rainbow Six Siege,136.9,False,Unknown,Unsupported,borked,0.08,79.0
-351940,The Descendant,4.083333333333333,False,Unknown,Unknown,platinum,0.64,61.0
-259320,Heli Heroes,4.5,False,Unknown,Unknown,gold,0.3,
-367500,Dragon's Dogma: Dark Arisen,0.0,True,Unknown,Verified,gold,0.8,81.0
-287390,Metro: Last Light Redux,2.2,False,Unknown,Verified,platinum,0.88,
-286690,Metro 2033 Redux,1.75,False,Unknown,Verified,platinum,0.83,
-337000,Deus Ex: Mankind Divided™,0.0,True,Unknown,Verified,gold,0.74,
-283270,Jagged Alliance Gold,0.0,True,Unknown,Unknown,pending,0.34,
-65790,Arma: Cold War Assault,0.0,True,Unknown,Unknown,silver,0.34,
-412020,Metro Exodus,1.4166666666666667,False,Unknown,Verified,gold,0.81,83.0
-374320,DARK SOULS™ III,35.016666666666666,False,Unknown,Verified,platinum,0.84,
-364210,Sierra Ops,5.2,False,Unknown,Unknown,gold,0.21,
-413150,Stardew Valley,200.21666666666667,False,Unknown,Verified,platinum,0.95,89.0
-424840,Little Nightmares,12.133333333333333,False,Unknown,Verified,platinum,0.85,83.0
-407530,ARK: Survival Of The Fittest,0.0,True,Unknown,Unknown,bronze,0.06,
-406970,The Uncertain: Last Quiet Day,0.0,True,Unknown,Verified,platinum,0.72,
-392110,ENDLESS Space™ 2,1.85,False,Unknown,Verified,gold,0.74,
-437920,Tricky Towers,1.0333333333333334,False,Unknown,Verified,platinum,0.82,72.0
-489830,The Elder Scrolls V: Skyrim Special Edition,84.23333333333333,False,Unknown,Verified,gold,0.81,82.0
-544330,Snake Pass,5.95,False,Unknown,Verified,gold,0.76,74.0
-397080,Magicka 2: Spell Balance Beta,0.0,True,Unknown,Unknown,platinum,0.44,
-435150,Divinity: Original Sin 2,20.6,False,Unknown,Verified,gold,0.76,
-552500,Warhammer: Vermintide 2,0.0,True,Unknown,Playable,silver,0.52,83.0
-582660,Black Desert,0.0,True,Unknown,Unknown,gold,0.61,73.0
-409710,BioShock Remastered,1.8833333333333333,False,Unknown,Verified,gold,0.76,
-588650,Dead Cells,76.0,False,Unknown,Verified,platinum,0.93,91.0
-539720,Razortron 2000,5.383333333333334,False,Unknown,Unknown,platinum,0.61,
-485450,Ninja Stealth,0.0,True,Unknown,Unknown,platinum,0.65,
-570940,DARK SOULS™: REMASTERED,46.833333333333336,False,Unknown,Verified,platinum,0.87,
-624690,NEXT JUMP: Shmup Tactics,0.0,True,Unknown,Unknown,pending,0.0,
-632360,Risk of Rain 2,14.583333333333334,False,Unknown,Verified,platinum,0.9,
-438480,Rock 'N' Roll Defense,5.133333333333334,False,Unknown,Unknown,platinum,0.57,
-623990,Tom Clancy's Rainbow Six Siege - Test Server,0.0,True,Unknown,Unsupported,borked,0.0,
-584640,SUPER CHICKEN JUMPER,4.566666666666666,False,Unknown,Unknown,platinum,0.67,
-646910,The Crew 2,30.916666666666668,False,Unknown,Unsupported,borked,0.01,69.0
-475150,Titan Quest Anniversary Edition,0.0,True,Unknown,Verified,platinum,0.82,
-562360,"Planes, Bullets and Vodka",6.2,False,Unknown,Unknown,platinum,0.53,
-548430,Deep Rock Galactic,12.633333333333333,False,Unknown,Verified,platinum,0.88,
-409720,BioShock 2 Remastered,1.7666666666666666,False,Unknown,Verified,gold,0.76,
-847370,Sunset Overdrive,1.8666666666666667,False,Unknown,Unknown,gold,0.69,81.0
-632470,Disco Elysium,2.4166666666666665,False,Unknown,Verified,gold,0.8,
-699920,Despotism 3k,0.0,True,Unknown,Unknown,platinum,0.68,
-731490,Crash Bandicoot™ N. Sane Trilogy,3.8666666666666667,False,Unknown,Verified,platinum,0.83,
-671860,BattleBit Remastered,33.6,False,Unknown,Verified,gold,0.76,
-814380,Sekiro™: Shadows Die Twice,64.51666666666667,False,Unknown,Verified,platinum,0.88,
-774361,Blasphemous,22.6,False,Unknown,Verified,gold,0.73,
-636150,Cyberhunt,4.633333333333334,False,Unknown,Unknown,gold,0.3,
-706220,Black Desert SA (Retired),0.0,True,Unknown,Unknown,bronze,0.06,
-860510,Little Nightmares II,0.0,True,Unknown,Verified,platinum,0.87,
-1222140,Detroit: Become Human,0.0,True,Unknown,Verified,gold,0.78,78.0
-993090,Lossless Scaling,0.016666666666666666,False,Unknown,Unknown,bronze,0.13,
-976310,Mortal Kombat 11,0.4,False,Unknown,Unknown,gold,0.67,
-1180660,Tell Me Why,0.0,True,Unknown,Verified,platinum,0.87,
-1097150,Fall Guys,66.03333333333333,False,Unknown,Playable,silver,0.56,
-1022310,Warhammer Underworlds - Shadespire Edition,0.0,True,Unknown,Unknown,platinum,0.65,
-1086940,Baldur's Gate 3,125.33333333333333,False,Unknown,Verified,gold,0.84,
-1092790,Inscryption,26.666666666666668,False,Unknown,Verified,platinum,0.86,
-1237970,Titanfall® 2,14.733333333333333,False,Unknown,Verified,gold,0.76,
-1422450,Deadlock,1.0,False,Unknown,Verified,platinum,0.84,77.0
-1426210,It Takes Two,0.0,True,Unknown,Verified,gold,0.73,
-1294660,Divine Knockout (DKO),0.0,True,Unknown,Unknown,silver,0.39,
-1030300,Hollow Knight: Silksong,106.21666666666667,False,Unknown,Verified,platinum,0.98,
-1238840,Battlefield™ 1,11.183333333333334,False,Unknown,Playable,silver,0.46,
-1449560,Metro Exodus Enhanced Edition,0.0,True,Unknown,Playable,silver,0.42,
-1245620,ELDEN RING,109.71666666666667,False,Unknown,Verified,gold,0.78,
-1455840,Dorfromantik,6.066666666666666,False,Unknown,Verified,platinum,0.85,
-1562430,DREDGE,0.0,True,Unknown,Verified,platinum,0.93,
-1693980,Dead Space,0.0,True,Unknown,Unknown,gold,0.67,87.0
-1515950,Capcom Arcade Stadium,3.1333333333333333,False,Unknown,Unknown,gold,0.44,
-1492330,Century Playtest,0.0,True,Unknown,Unknown,unknown,0.0,
-1808500,ARC Raiders,74.7,False,Unknown,Verified,platinum,0.85,
-1724660,New World: Aeternum Open Beta,3.35,False,Unknown,Unsupported,borked,0.0,
-1911390,Knightfall: A Daring Journey,0.0,True,Unknown,Verified,platinum,0.76,
-2075070,KinitoPET,2.3666666666666667,False,Unknown,Unknown,bronze,0.09,
-1611740,BattleBit Remastered Playtest,1.65,False,Unknown,Verified,platinum,0.7,
-1940990,Ironsight Test Server,0.0,True,Unknown,Unknown,unknown,0.0,
-2076040,THE FINALS PLAYTEST,0.0,True,Unknown,Unknown,bronze,0.04,
-1840560,Paragon: The Overprime Final Test,0.0,True,Unknown,Unknown,unknown,0.0,
-1794680,Vampire Survivors,16.083333333333332,False,Unknown,Verified,platinum,0.84,
-2107680,Warhaven Playtest,0.9,False,Unknown,Unknown,unknown,0.0,
-2338770,NBA 2K24,8.55,False,Unknown,Unknown,gold,0.44,
-2149010,Little Nightmares Enhanced Edition,0.0,True,Unknown,Unknown,gold,0.49,
-2187290,Wall World,3.5166666666666666,False,Unknown,Verified,platinum,0.88,
-2379780,Balatro,21.766666666666666,False,Unknown,Verified,platinum,0.96,
-2138710,Sifu,22.716666666666665,False,Unknown,Verified,platinum,0.84,
-2784470,9 Kings,3.6,False,Unknown,Verified,platinum,0.77,
-2231450,Pizza Tower,8.75,False,Unknown,Verified,platinum,0.88,
-2166050,Moonleap,3.6166666666666667,False,Unknown,Unknown,platinum,0.44,
-2111190,Mullet Mad Jack,5.05,False,Unknown,Verified,platinum,0.85,
-3097560,Liar's Bar,3.816666666666667,False,Unknown,Unknown,gold,0.66,
-3405340,Megabonk,21.166666666666668,False,Unknown,Verified,platinum,0.97,
-2835570,Buckshot Roulette,2.283333333333333,False,Unknown,Verified,platinum,0.87,
-2868840,Slay the Spire 2,80.58333333333333,False,Unknown,Verified,platinum,0.93,
+app_id,name,playtime_hours,is_backlog,categories,steam_deck_status,protondb_tier,protondb_score,metacritic_score,hltb_main_story,hltb_main_extra,hltb_completionist,hltb_all_styles
+220,Half-Life 2,0.0,True,Unknown,Verified,platinum,0.91,,12.89,15.62,19.88,14.54
+360,Half-Life Deathmatch: Source,0.0,True,Unknown,Unknown,platinum,0.61,,2.5,2.67,3.33,2.63
+7670,BioShock,0.0,True,Unknown,Unknown,gold,0.62,94.0,12.12,15.63,23.24,14.38
+400,Portal,3.05,False,Unknown,Verified,platinum,0.88,95.0,3.12,5.25,10.46,3.93
+620,Portal 2,8.766666666666667,False,Unknown,Verified,platinum,0.88,95.0,8.54,13.72,22.53,10.59
+6920,Deus Ex: Invisible War,0.0,True,Unknown,Verified,platinum,0.76,,9.08,13.46,18.98,12.69
+320,Half-Life 2: Deathmatch,0.0,True,Unknown,Unknown,gold,0.45,,2.42,9.76,21.55,7.02
+70,Half-Life,0.0,True,Unknown,Verified,platinum,0.81,,11.96,14.1,15.38,12.55
+6910,Deus Ex: Game of the Year Edition,0.0,True,Unknown,Verified,platinum,0.82,,22.93,28.71,39.09,27.94
+8850,BioShock 2,0.0,True,Unknown,Unknown,gold,0.63,,10.58,14.41,23.74,12.96
+40990,Mafia,0.0,True,Unknown,Verified,gold,0.76,68.0,16.14,18.27,21.22,17.64
+8870,BioShock Infinite,1.6833333333333333,False,Unknown,Unknown,gold,0.69,94.0,11.54,16.1,28.55,13.99
+22380,Fallout: New Vegas,0.0,True,Unknown,Verified,gold,0.83,82.0,26.87,60.29,130.79,57.81
+105600,Terraria,3.8333333333333335,False,Unknown,Verified,platinum,0.83,83.0,51.75,91.86,205.65,105.89
+20920,The Witcher 2: Assassins of Kings Enhanced Edition,36.483333333333334,False,Unknown,Verified,gold,0.76,,0.0,0.0,0.0,0.0
+34270,SEGA Mega Drive & Genesis Classics,0.0,True,Unknown,Unknown,gold,0.61,,0.0,0.0,0.0,0.0
+49520,Borderlands 2,0.0,True,Unknown,Verified,platinum,0.83,89.0,30.09,54.86,130.02,52.46
+43160,Metro: Last Light Complete Edition,0.0,True,Unknown,Playable,silver,0.41,,9.78,13.52,27.7,11.97
+65790,Arma: Cold War Assault,0.0,True,Unknown,Unknown,silver,0.34,,22.78,37.36,68.09,30.56
+43110,Metro 2033,0.0,True,Unknown,Verified,platinum,0.77,,9.53,12.07,20.45,10.63
+203160,Tomb Raider,0.0,True,Unknown,Verified,platinum,0.9,86.0,11.32,15.46,20.91,14.33
+201810,Wolfenstein: The New Order,0.0,True,Unknown,Verified,platinum,0.89,81.0,11.37,15.33,24.39,13.63
+108710,Alan Wake,0.0,True,Unknown,Verified,platinum,0.84,83.0,11.18,14.4,27.32,13.12
+204360,Castle Crashers,8.3,False,Unknown,Verified,platinum,0.84,83.0,7.17,13.13,36.87,10.51
+210970,The Witness,3.783333333333333,False,Unknown,Verified,gold,0.78,87.0,16.9,24.19,37.44,22.69
+204450,Call of Juarez Gunslinger,0.0,True,Unknown,Verified,platinum,0.81,,5.07,7.02,14.04,6.05
+219150,Hotline Miami,9.05,False,Unknown,Verified,platinum,0.82,85.0,5.24,7.32,15.42,6.76
+227300,Euro Truck Simulator 2,27.583333333333332,False,Unknown,Verified,platinum,0.91,79.0,45.91,115.46,457.98,138.75
+232770,POSTAL,0.0,True,Unknown,Verified,platinum,0.72,24.0,2.43,3.67,13.01,4.02
+226620,Desktop Dungeons,0.0,True,Unknown,Unknown,gold,0.57,,19.29,47.38,129.74,52.52
+234140,Mad Max,0.0,True,Unknown,Verified,platinum,0.91,73.0,20.1,38.85,61.61,40.08
+231430,Company of Heroes 2,0.0,True,Unknown,Unknown,gold,0.69,80.0,15.83,25.93,64.01,20.3
+238010,Deus Ex: Human Revolution - Director's Cut,0.0,True,Unknown,Verified,gold,0.79,88.0,23.03,31.09,46.6,31.44
+238370,Magicka 2,2.816666666666667,False,Unknown,Verified,platinum,0.82,72.0,6.17,10.04,33.38,7.82
+238320,Outlast,2.4166666666666665,False,Unknown,Verified,platinum,0.87,80.0,5.14,7.27,11.43,6.32
+239140,Dying Light,0.0,True,Unknown,Verified,platinum,0.88,75.0,18.22,36.47,64.34,31.61
+239820,Game Dev Tycoon,4.416666666666667,False,Unknown,Unknown,gold,0.63,68.0,8.61,15.07,25.9,12.9
+250900,The Binding of Isaac: Rebirth,44.3,False,Unknown,Verified,platinum,0.86,88.0,5.62,98.79,386.93,127.06
+247080,Crypt of the NecroDancer,2.816666666666667,False,Unknown,Verified,platinum,0.75,87.0,13.99,26.13,393.35,22.77
+252150,Grimm,4.316666666666666,False,Unknown,Verified,platinum,0.77,77.0,0.42,0.53,0.55,0.51
+268910,Cuphead,64.3,False,Unknown,Verified,platinum,0.86,88.0,10.52,16.09,27.94,15.92
+248820,Risk of Rain (2013),16.666666666666668,False,Unknown,Unknown,gold,0.64,,0.0,0.0,0.0,0.0
+242700,Injustice: Gods Among Us Ultimate Edition,0.5833333333333334,False,Unknown,Verified,gold,0.75,,5.03,11.57,25.11,6.01
+259320,Heli Heroes,4.5,False,Unknown,Unknown,gold,0.3,,3.0,3.58,4.03,3.35
+307690,Sleeping Dogs: Definitive Edition,0.0,True,Unknown,Verified,gold,0.74,77.0,14.35,23.55,41.7,23.95
+283270,Jagged Alliance Gold,0.0,True,Unknown,Unknown,pending,0.34,,10.57,25.91,29.83,19.61
+346110,ARK: Survival Evolved,0.0,True,Unknown,Unknown,gold,0.67,70.0,68.77,313.74,940.01,279.3
+286690,Metro 2033 Redux,1.75,False,Unknown,Verified,platinum,0.83,,9.05,11.54,23.68,10.61
+287390,Metro: Last Light Redux,2.2,False,Unknown,Verified,platinum,0.88,,9.78,13.52,27.7,11.97
+337000,Deus Ex: Mankind Divided™,0.0,True,Unknown,Verified,gold,0.74,,0.0,0.0,0.0,0.0
+359550,Tom Clancy's Rainbow Six Siege,136.9,False,Unknown,Unsupported,borked,0.08,79.0,3.32,26.39,169.08,54.59
+335300,DARK SOULS™ II: Scholar of the First Sin,63.233333333333334,False,Unknown,Verified,platinum,0.87,,0.0,0.0,0.0,0.0
+351940,The Descendant,4.083333333333333,False,Unknown,Unknown,platinum,0.64,61.0,5.66,6.2,10.03,6.25
+367500,Dragon's Dogma: Dark Arisen,0.0,True,Unknown,Verified,gold,0.8,81.0,32.7,52.89,113.28,50.88
+374320,DARK SOULS™ III,35.016666666666666,False,Unknown,Verified,platinum,0.84,,0.0,0.0,0.0,0.0
+364210,Sierra Ops,5.2,False,Unknown,Unknown,gold,0.21,,0.0,0.0,0.0,0.0
+392110,ENDLESS Space™ 2,1.85,False,Unknown,Verified,gold,0.74,,0.0,0.0,0.0,0.0
+397080,Magicka 2: Spell Balance Beta,0.0,True,Unknown,Unknown,platinum,0.44,,0.0,0.0,0.0,0.0
+407530,ARK: Survival Of The Fittest,0.0,True,Unknown,Unknown,bronze,0.06,,51.5,0.0,55.25,54.0
+406970,The Uncertain: Last Quiet Day,0.0,True,Unknown,Verified,platinum,0.72,,3.01,3.35,4.49,3.45
+424840,Little Nightmares,12.133333333333333,False,Unknown,Verified,platinum,0.85,83.0,3.57,5.18,9.14,4.31
+409710,BioShock Remastered,1.8833333333333333,False,Unknown,Verified,gold,0.76,,12.12,15.63,23.24,14.38
+409720,BioShock 2 Remastered,1.7666666666666666,False,Unknown,Verified,gold,0.76,,10.58,14.41,23.74,12.96
+412020,Metro Exodus,1.4166666666666667,False,Unknown,Verified,gold,0.81,83.0,15.92,24.0,41.66,22.4
+413150,Stardew Valley,200.21666666666667,False,Unknown,Verified,platinum,0.95,89.0,53.4,94.72,171.76,99.89
+435150,Divinity: Original Sin 2,20.6,False,Unknown,Verified,gold,0.76,,59.22,101.44,157.79,102.16
+437920,Tricky Towers,1.0333333333333334,False,Unknown,Verified,platinum,0.82,72.0,9.68,19.51,37.22,13.43
+438480,Rock 'N' Roll Defense,5.133333333333334,False,Unknown,Unknown,platinum,0.57,,2.2,4.3,4.62,4.07
+489830,The Elder Scrolls V: Skyrim Special Edition,84.23333333333333,False,Unknown,Verified,gold,0.81,82.0,26.0,111.1,202.95,115.94
+552500,Warhammer: Vermintide 2,0.0,True,Unknown,Playable,silver,0.52,83.0,10.85,28.67,127.12,24.67
+544330,Snake Pass,5.95,False,Unknown,Verified,gold,0.76,74.0,5.29,8.36,12.31,8.41
+539720,Razortron 2000,5.383333333333334,False,Unknown,Unknown,platinum,0.61,,2.84,3.14,3.52,3.3
+475150,Titan Quest Anniversary Edition,0.0,True,Unknown,Verified,platinum,0.82,,30.75,46.15,115.38,46.8
+485450,Ninja Stealth,0.0,True,Unknown,Unknown,platinum,0.65,,1.58,1.68,5.12,4.35
+562360,"Planes, Bullets and Vodka",6.2,False,Unknown,Unknown,platinum,0.53,,0.45,1.5,2.89,2.65
+582660,Black Desert,0.0,True,Unknown,Unknown,gold,0.61,73.0,93.74,287.31,2060.45,384.46
+548430,Deep Rock Galactic,12.633333333333333,False,Unknown,Verified,platinum,0.88,,44.83,139.43,493.81,116.12
+588650,Dead Cells,76.0,False,Unknown,Verified,platinum,0.93,91.0,14.05,32.05,91.89,21.85
+632360,Risk of Rain 2,14.583333333333334,False,Unknown,Verified,platinum,0.9,,10.76,44.04,144.9,43.78
+584640,SUPER CHICKEN JUMPER,4.566666666666666,False,Unknown,Unknown,platinum,0.67,,4.1,5.64,6.41,4.74
+623990,Tom Clancy's Rainbow Six Siege - Test Server,0.0,True,Unknown,Unsupported,borked,0.0,,0.0,0.0,0.0,0.0
+624690,NEXT JUMP: Shmup Tactics,0.0,True,Unknown,Unknown,pending,0.0,,3.14,7.44,13.84,6.53
+570940,DARK SOULS™: REMASTERED,46.833333333333336,False,Unknown,Verified,platinum,0.87,,0.0,0.0,0.0,0.0
+646910,The Crew 2,30.916666666666668,False,Unknown,Unsupported,borked,0.01,69.0,21.59,46.08,80.26,48.9
+632470,Disco Elysium,2.4166666666666665,False,Unknown,Verified,gold,0.8,,23.7,33.15,48.17,32.08
+636150,Cyberhunt,4.633333333333334,False,Unknown,Unknown,gold,0.3,,0.0,3.0,5.06,4.76
+671860,BattleBit Remastered,33.6,False,Unknown,Verified,gold,0.76,,21.0,29.48,0.0,27.58
+699920,Despotism 3k,0.0,True,Unknown,Unknown,platinum,0.68,,3.52,8.04,68.66,8.37
+847370,Sunset Overdrive,1.8666666666666667,False,Unknown,Unknown,gold,0.69,81.0,10.1,17.67,34.23,15.2
+731490,Crash Bandicoot™ N. Sane Trilogy,3.8666666666666667,False,Unknown,Verified,platinum,0.83,,0.0,0.0,0.0,0.0
+774361,Blasphemous,22.6,False,Unknown,Verified,gold,0.73,,14.0,19.97,31.21,19.68
+706220,Black Desert SA (Retired),0.0,True,Unknown,Unknown,bronze,0.06,,0.0,0.0,0.0,0.0
+860510,Little Nightmares II,0.0,True,Unknown,Verified,platinum,0.87,,5.66,6.64,8.69,6.31
+814380,Sekiro™: Shadows Die Twice,64.51666666666667,False,Unknown,Verified,platinum,0.88,,0.0,0.0,0.0,0.0
+976310,Mortal Kombat 11,0.4,False,Unknown,Unknown,gold,0.67,,6.31,18.23,61.78,11.9
+993090,Lossless Scaling,0.016666666666666666,False,Unknown,Unknown,bronze,0.13,,0.0,0.0,0.0,0.0
+1022310,Warhammer Underworlds - Shadespire Edition,0.0,True,Unknown,Unknown,platinum,0.65,,0.0,0.0,0.0,0.0
+1030300,Hollow Knight: Silksong,113.73333333333333,False,Unknown,Verified,platinum,0.98,,28.2,46.85,64.97,49.54
+1222140,Detroit: Become Human,0.0,True,Unknown,Verified,gold,0.78,78.0,12.08,15.74,32.17,14.18
+1097150,Fall Guys,66.03333333333333,False,Unknown,Playable,silver,0.56,,9.91,31.38,98.54,34.57
+1086940,Baldur's Gate 3,125.33333333333333,False,Unknown,Verified,gold,0.84,,72.86,116.42,181.12,117.93
+1092790,Inscryption,26.666666666666668,False,Unknown,Verified,platinum,0.86,,12.82,15.59,31.45,15.05
+1238840,Battlefield™ 1,11.183333333333334,False,Unknown,Playable,silver,0.46,,0.0,0.0,0.0,0.0
+1294660,Divine Knockout (DKO),0.0,True,Unknown,Unknown,silver,0.39,,0.0,0.0,0.0,0.0
+1180660,Tell Me Why,0.0,True,Unknown,Verified,platinum,0.87,,9.7,11.19,13.75,11.05
+1237970,Titanfall® 2,14.733333333333333,False,Unknown,Verified,gold,0.76,,0.0,0.0,0.0,0.0
+1422450,Deadlock,1.0,False,Unknown,Verified,platinum,0.84,77.0,53.43,86.63,0.0,57.01
+1245620,ELDEN RING,109.71666666666667,False,Unknown,Verified,gold,0.78,,60.03,101.16,135.8,105.43
+1426210,It Takes Two,0.0,True,Unknown,Verified,gold,0.73,,12.8,14.21,16.45,14.13
+1449560,Metro Exodus Enhanced Edition,0.0,True,Unknown,Playable,silver,0.42,,15.92,24.0,41.66,22.4
+1693980,Dead Space,0.0,True,Unknown,Unknown,gold,0.68,87.0,12.13,16.16,29.79,15.52
+1455840,Dorfromantik,6.066666666666666,False,Unknown,Verified,platinum,0.85,,5.18,18.36,60.68,18.36
+1562430,DREDGE,0.0,True,Unknown,Verified,platinum,0.93,,9.69,12.86,20.5,13.78
+1611740,BattleBit Remastered Playtest,1.65,False,Unknown,Verified,platinum,0.7,,0.0,0.0,0.0,0.0
+1724660,New World: Aeternum Open Beta,3.35,False,Unknown,Unsupported,borked,0.0,,0.0,0.0,0.0,0.0
+1492330,Century Playtest,0.0,True,Unknown,Unknown,unknown,0.0,,0.0,0.0,0.0,0.0
+1794680,Vampire Survivors,16.083333333333332,False,Unknown,Verified,platinum,0.84,,15.11,28.07,53.12,35.99
+1515950,Capcom Arcade Stadium,3.1333333333333333,False,Unknown,Unknown,gold,0.44,,1.38,10.33,29.07,12.29
+1808500,ARC Raiders,74.7,False,Unknown,Verified,platinum,0.85,,46.61,98.03,198.96,93.29
+1840560,Paragon: The Overprime Final Test,0.0,True,Unknown,Unknown,unknown,0.0,,0.0,0.0,0.0,0.0
+2075070,KinitoPET,2.3666666666666667,False,Unknown,Unknown,bronze,0.09,,1.72,2.45,3.73,2.43
+1940990,Ironsight Test Server,0.0,True,Unknown,Unknown,unknown,0.0,,0.0,0.0,0.0,0.0
+2138710,Sifu,22.716666666666665,False,Unknown,Verified,platinum,0.84,,7.76,14.03,22.33,11.9
+1911390,Knightfall: A Daring Journey,0.0,True,Unknown,Verified,platinum,0.76,,0.35,1.0,1.82,0.81
+2076040,THE FINALS PLAYTEST,0.0,True,Unknown,Unknown,bronze,0.04,,0.0,0.0,0.0,0.0
+2107680,Warhaven Playtest,0.9,False,Unknown,Unknown,unknown,0.0,,0.0,0.0,0.0,0.0
+2187290,Wall World,3.5166666666666666,False,Unknown,Verified,platinum,0.88,,11.91,15.51,21.43,15.3
+2111190,Mullet Mad Jack,5.05,False,Unknown,Verified,platinum,0.85,,3.28,5.0,9.96,3.86
+2149010,Little Nightmares Enhanced Edition,0.0,True,Unknown,Unknown,gold,0.49,,3.57,5.18,9.14,4.31
+2166050,Moonleap,3.6166666666666667,False,Unknown,Unknown,platinum,0.44,,1.97,2.38,4.69,2.7
+2231450,Pizza Tower,8.75,False,Unknown,Verified,platinum,0.88,,6.26,11.14,45.44,10.15
+2338770,NBA 2K24,8.55,False,Unknown,Unknown,gold,0.44,,36.3,48.18,165.17,64.98
+2379780,Balatro,21.766666666666666,False,Unknown,Verified,platinum,0.96,,7.59,46.67,251.05,27.04
+2835570,Buckshot Roulette,2.283333333333333,False,Unknown,Verified,platinum,0.87,,0.45,1.73,9.49,1.19
+2784470,9 Kings,3.6,False,Unknown,Verified,platinum,0.77,,5.19,14.21,21.78,11.15
+3405340,Megabonk,21.166666666666668,False,Unknown,Verified,platinum,0.97,,13.6,31.46,54.87,31.48
+3097560,Liar's Bar,3.816666666666667,False,Unknown,Unknown,gold,0.66,,1.94,3.58,4.0,2.92
+2868840,Slay the Spire 2,80.58333333333333,False,Unknown,Verified,platinum,0.93,,9.59,43.61,105.49,29.93

@@ -45,9 +45,13 @@ def load_data():
     if 'protondb_tier' not in df.columns:
         df['protondb_tier'] = 'unknown'
     
-    if 'steam_deck_status' not in df.columns:
-        df['steam_deck_status'] = 'Unknown'
-    
+    # Colunas HLTB (podem não existir no CSV antigo)
+    for col in ['hltb_main_story', 'hltb_main_extra', 'hltb_completionist', 'hltb_all_styles']:
+        if col not in df.columns:
+            df[col] = 0
+    for col in ['hltb_main_story', 'hltb_main_extra', 'hltb_completionist', 'hltb_all_styles']:
+        df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
+
     return df
 
 df = load_data()
@@ -88,6 +92,15 @@ min_hours, max_hours = st.sidebar.slider(
 # Filtro Metacritic
 has_mc = st.sidebar.checkbox("Apenas com score Metacritic", value=False)
 
+# Filtro HLTB duração
+st.sidebar.markdown("---")
+st.sidebar.markdown("**⏱ Duração HLTB**")
+
+duration_filter = st.sidebar.selectbox(
+    "Categoria de duração:",
+    ["Todas", "Muito Curta (<5h)", "Curta (5-15h)", "Média (15-30h)", "Longa (30-60h)", "Muito Longa (>60h)"]
+)
+
 # ==================== APLICAR FILTROS ====================
 
 filtered_df = df.copy()
@@ -120,6 +133,19 @@ filtered_df = filtered_df[
 if has_mc:
     filtered_df = filtered_df[filtered_df['metacritic_score'].notna()]
 
+# Filtro duração HLTB
+if duration_filter != "Todas":
+    if duration_filter == "Muito Curta (<5h)":
+        filtered_df = filtered_df[filtered_df['hltb_all_styles'] < 5]
+    elif duration_filter == "Curta (5-15h)":
+        filtered_df = filtered_df[(filtered_df['hltb_all_styles'] >= 5) & (filtered_df['hltb_all_styles'] < 15)]
+    elif duration_filter == "Média (15-30h)":
+        filtered_df = filtered_df[(filtered_df['hltb_all_styles'] >= 15) & (filtered_df['hltb_all_styles'] < 30)]
+    elif duration_filter == "Longa (30-60h)":
+        filtered_df = filtered_df[(filtered_df['hltb_all_styles'] >= 30) & (filtered_df['hltb_all_styles'] < 60)]
+    elif duration_filter == "Muito Longa (>60h)":
+        filtered_df = filtered_df[filtered_df['hltb_all_styles'] >= 60]
+
 # ==================== HEADER ====================
 
 st.title("🎮 Steam Games Dashboard")
@@ -127,7 +153,7 @@ st.markdown(f"**{len(filtered_df)}** jogos encontrados de **{len(df)}** totais")
 
 # ==================== MÉTRICAS GERAIS ====================
 
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
     st.metric(
@@ -158,6 +184,15 @@ with col4:
         "Com Metacritic",
         f"{mc_count}",
         delta=f"Média: {mc_avg:.0f}" if mc_count > 0 else None
+    )
+
+with col5:
+    hltb_count = filtered_df['hltb_all_styles'].gt(0).sum()
+    hltb_avg = filtered_df[filtered_df['hltb_all_styles'] > 0]['hltb_all_styles'].mean() if hltb_count > 0 else 0
+    st.metric(
+        "Com HowLongToBeat",
+        f"{hltb_count}",
+        delta=f"Média: {hltb_avg:.0f}h" if hltb_count > 0 else None
     )
 
 # ==================== GRÁFICOS ====================
@@ -194,7 +229,7 @@ with chart_col1:
         showlegend=True
     )
     
-    st.plotly_chart(fig_bar, use_container_width=True)
+    st.plotly_chart(fig_bar, width='stretch')
 
 with chart_col2:
     st.subheader("🎯 Distribuição Steam Deck")
@@ -216,7 +251,7 @@ with chart_col2:
     
     fig_pie.update_layout(height=500)
     
-    st.plotly_chart(fig_pie, use_container_width=True)
+    st.plotly_chart(fig_pie, width='stretch')
 
 # ==================== TERCEIRA ROW - METACRITIC ====================
 
@@ -252,7 +287,7 @@ with chart_col5:
             showlegend=True
         )
         
-        st.plotly_chart(fig_mc, use_container_width=True)
+        st.plotly_chart(fig_mc, width='stretch')
     else:
         st.info("Nenhum jogo com score Metacritic encontrado")
 
@@ -275,7 +310,7 @@ with chart_col6:
         
         fig_dist.update_layout(height=500)
         
-        st.plotly_chart(fig_dist, use_container_width=True)
+        st.plotly_chart(fig_dist, width='stretch')
     else:
         st.info("Nenhum jogo com score Metacritic encontrado")
 
@@ -308,7 +343,7 @@ with chart_col3:
     
     fig_scatter.update_layout(height=500)
     
-    st.plotly_chart(fig_scatter, use_container_width=True)
+    st.plotly_chart(fig_scatter, width='stretch')
 
 with chart_col4:
     st.subheader("🏆 Top ProtonDB Tiers")
@@ -336,7 +371,102 @@ with chart_col4:
     
     fig_tiers.update_layout(height=500, showlegend=False)
     
-    st.plotly_chart(fig_tiers, use_container_width=True)
+    st.plotly_chart(fig_tiers, width='stretch')
+
+# ==================== QUARTA ROW - HOW LONG TO BEAT ====================
+
+st.markdown("---")
+st.subheader("⏱ Análise HowLongToBeat")
+
+chart_col7, chart_col8 = st.columns(2)
+
+with chart_col7:
+    # Scatter: Duração estimada vs horas jogadas
+    hltb_data = filtered_df[filtered_df['hltb_all_styles'] > 0].copy()
+    if not hltb_data.empty:
+        # Calcular % de progresso
+        hltb_data['progress_pct'] = (
+            (hltb_data['playtime_hours'] / hltb_data['hltb_all_styles'] * 100)
+            .clip(0, 200)
+        )
+        
+        fig_hltb = px.scatter(
+            hltb_data,
+            x='hltb_all_styles',
+            y='playtime_hours',
+            color='steam_deck_status',
+            size='hltb_all_styles',
+            hover_name='name',
+            color_discrete_map={
+                'Verified': '#2ecc71',
+                'Playable': '#f39c12',
+                'Unknown': '#95a5a6',
+                'Unsupported': '#e74c3c'
+            },
+            labels={
+                'hltb_all_styles': 'Duração HLTB (All Styles)',
+                'playtime_hours': 'Horas Jogadas',
+                'steam_deck_status': 'Steam Deck'
+            }
+        )
+        
+        # Linha diagonal (y=x) - "completei exatamente"
+        max_val = max(hltb_data['hltb_all_styles'].max(), hltb_data['playtime_hours'].max())
+        fig_hltb.add_trace(go.Scatter(
+            x=[0, max_val],
+            y=[0, max_val],
+            mode='lines',
+            name='Limite de conclusão',
+            line=dict(color='rgba(255,255,255,0.3)', dash='dash')
+        ))
+        
+        fig_hltb.update_layout(height=500)
+        st.plotly_chart(fig_hltb, width='stretch')
+    else:
+        st.info("Nenhum jogo com dados HLTB encontrado")
+
+with chart_col8:
+    # Distribuição por categoria de duração
+    hltb_categories = filtered_df[filtered_df['hltb_all_styles'] > 0].copy()
+    if not hltb_categories.empty:
+        def duration_category(hours):
+            if hours < 5:
+                return "Muito Curta (<5h)"
+            elif hours < 15:
+                return "Curta (5-15h)"
+            elif hours < 30:
+                return "Média (15-30h)"
+            elif hours < 60:
+                return "Longa (30-60h)"
+            else:
+                return "Muito Longa (>60h)"
+        
+        hltb_categories['duration_cat'] = hltb_categories['hltb_all_styles'].apply(duration_category)
+        cat_order = ["Muito Curta (<5h)", "Curta (5-15h)", "Média (15-30h)", "Longa (30-60h)", "Muito Longa (>60h)"]
+        
+        cat_counts = hltb_categories['duration_cat'].value_counts()
+        cat_counts = cat_counts.reindex([c for c in cat_order if c in cat_counts.index])
+        
+        cat_colors = {
+            "Muito Curta (<5h)": '#2ecc71',
+            "Curta (5-15h)": '#3498db',
+            "Média (15-30h)": '#f39c12',
+            "Longa (30-60h)": '#e67e22',
+            "Muito Longa (>60h)": '#e74c3c'
+        }
+        
+        fig_cat = px.bar(
+            x=cat_counts.index,
+            y=cat_counts.values,
+            color=cat_counts.index,
+            color_discrete_map=cat_colors,
+            labels={'x': 'Categoria', 'y': 'Quantidade', 'color': 'Duração'}
+        )
+        
+        fig_cat.update_layout(height=500, showlegend=False)
+        st.plotly_chart(fig_cat, width='stretch')
+    else:
+        st.info("Nenhum jogo com dados HLTB encontrado")
 
 # ==================== TABELA DE DADOS ====================
 
@@ -357,14 +487,14 @@ display_df = filtered_df.sort_values(sort_by, ascending=ascending)
 # Selecionar colunas para exibir
 display_columns = st.multiselect(
     "Colunas para exibir:",
-    ['name', 'playtime_hours', 'steam_deck_status', 'protondb_tier', 'protondb_score', 'metacritic_score', 'is_backlog', 'categories'],
+    ['name', 'playtime_hours', 'steam_deck_status', 'protondb_tier', 'protondb_score', 'metacritic_score', 'hltb_main_story', 'hltb_all_styles', 'is_backlog', 'categories'],
     default=['name', 'playtime_hours', 'steam_deck_status', 'protondb_tier', 'metacritic_score']
 )
 
 if display_columns:
     st.dataframe(
         display_df[display_columns].reset_index(drop=True),
-        use_container_width=True,
+        width='stretch',
         height=600
     )
 
@@ -386,7 +516,7 @@ st.download_button(
 st.markdown("---")
 st.markdown(
     """
-    **Steam Games Dashboard** | Dados extraídos via Steam API + ProtonDB API | 
+    **Steam Games Dashboard** | Dados extraídos via Steam API + ProtonDB API + HowLongToBeat | 
     [GitHub](https://github.com/seu-usuario/analise_steam)
     """
 )

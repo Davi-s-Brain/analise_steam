@@ -334,6 +334,46 @@ def enrich_game_data(game: Dict[str, Any]) -> Dict[str, Any]:
     return game
 
 
+# ==================== HOW LONG TO BEAT API ====================
+
+class HowLongToBeatAPI:
+    """Cliente para HowLongToBeat - dados de duração de jogos"""
+
+    @staticmethod
+    def search_game(game_name: str) -> Optional[Dict[str, Any]]:
+        """
+        Busca dados de duração de um jogo no HowLongToBeat.
+
+        Args:
+            game_name: Nome do jogo
+
+        Returns:
+            Dict com hltb_main_story, hltb_main_extra, hltb_completionist, hltb_all_styles ou None
+        """
+        try:
+            from howlongtobeatpy import HowLongToBeat
+
+            results = HowLongToBeat(0.4).search(game_name, similarity_case_sensitive=False)
+
+            if results is not None and len(results) > 0:
+                best = max(results, key=lambda e: e.similarity)
+
+                return {
+                    "hltb_main_story": best.main_story or 0,
+                    "hltb_main_extra": best.main_extra or 0,
+                    "hltb_completionist": best.completionist or 0,
+                    "hltb_all_styles": best.all_styles or 0,
+                    "hltb_game_name": best.game_name,
+                    "hltb_similarity": best.similarity
+                }
+
+            return None
+
+        except Exception as e:
+            logger.warning(f"Erro ao buscar HLTB para '{game_name}': {e}")
+            return None
+
+
 if __name__ == "__main__":
     # Teste rápido
     print("=== Teste ProtonDB API ===")
